@@ -29,55 +29,6 @@ PhishGuard/
 └── README.md                # Project documentation
 ```
 
----
-
-## ⚙️ Setup & Installation
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/<your-username>/PhishGuard-AI.git
-   cd PhishGuard-AI
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. *(Optional)* If you don’t have `xgboost` installed:
-   ```bash
-   pip install xgboost
-   ```
-
----
-
-## 🏋️ Training
-
-Run the training script to build the phishing detection model:
-
-```bash
-python train.py --data DataFiles/urldata.csv --target label
-```
-
-- Loads dataset (`urldata.csv`).  
-- Splits into **80% training** and **20% testing**.  
-- Trains an **XGBoost Classifier**.  
-- Prints classification metrics and saves the trained model in `models/phishguard_xgb.pkl`.  
-
----
-
-## 🧪 Testing / Inference
-
-Use the saved model to classify new URLs:  
-
-```bash
-python predict.py --model models/phishguard_xgb.pkl --input sample_urls.csv
-```
-
-- Outputs predicted labels (`0 = benign`, `1 = phishing`) and probabilities.  
-
----
-
 ## 📊 Dataset & Results
 
 - Dataset size: ~10,000 URLs (5,000 phishing + 5,000 legitimate) sourced from:  
@@ -87,15 +38,6 @@ python predict.py --model models/phishguard_xgb.pkl --input sample_urls.csv
 - Achieved performance (original project benchmark):  
   - **Train Accuracy**: ~86.7%  
   - **Test Accuracy**: ~85.8%  
-
-*(You should rerun on your own dataset for updated results.)*
-
----
-
-## 📜 License
-This project is open-source and available for research and educational purposes.  
-
----
 
 📌 *Future Directions*:  
 - Add deep learning baselines (LSTM, Transformers on raw URLs).  
