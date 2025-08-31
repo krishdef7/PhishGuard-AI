@@ -50,6 +50,3 @@ PhishGuard/
 - Deploy with a simple web interface  
 
 ---
-
-## 📜 License
-MIT License
