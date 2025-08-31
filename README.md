@@ -23,12 +23,12 @@ The system is designed to help protect users and organizations against cyberatta
 
 ## 📂 Project Structure
 PhishGuard/
-│── DataFiles/ # Raw and processed datasets
-│── Notebooks/ # Jupyter experiments & EDA
-│── models/ # Saved trained models
-│── app.py # Optional API for predictions
-│── requirements.txt # Python dependencies
-│── README.md # Project documentation
+-│── DataFiles/ # Raw and processed datasets
+-│── Notebooks/ # Jupyter experiments & EDA
+-│── models/ # Saved trained models
+-│── app.py # Optional API for predictions
+-│── requirements.txt # Python dependencies
+-│── README.md # Project documentation
 
 
 ---
